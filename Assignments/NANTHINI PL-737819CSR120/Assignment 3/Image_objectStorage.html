@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://raguramibm2022.s3.jp-tok.cloud-object-storage.appdomain.cloud/styles.css" />
+  <style>
+ img{  
+ height: 250px;  
+ width: 250px;  
+ }  
+#left {    
+ text-align: left;  
+ }  
+ #center {    
+ text-align: center;  
+ }  
+ #right{    
+ text-align: right;  
+ }
+ html{
+ background-image: url("https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/pexels-lisa-fotios-1992912.jpg");
+ height: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ font-family:times new roman;
+ 
+ }
+ </style>
+  <body>
+    <h2 style="text-align: center;" "font-family: "Times New Roman", Times, serif">Click to view in full mode</h2>
+
+    <div class="row" id="center">
+      <div class="column">
+        <img
+          src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/butter.webp"          
+          style="width: 100%" style="text-align: auto"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column" id="center">
+        <img
+          src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/cheese.jpg"
+          style="width: 100%" style="text-align: center"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column" id="center">
+        <img
+          src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/curd.webp"
+          style="width: 100%"style="text-align: center"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column" id="center">
+        <img
+          src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/milk.jpg"
+          style="width: 100%"style="text-align: center"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column" id="center">
+        <img
+          src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/panner.jpg"
+          style="width: 100%"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow cursor"
+        />
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/butter.webp"
+            style="width: auto"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/cheese.jpg"
+            style="width: auto"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/curd.webp"
+            style="width: auto"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/milk.jpg"
+            style="width: auto"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/panner.jpg"
+            style="width: auto"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/butter.webp"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="Image 1"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/cheese.jpg"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="Image 2"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/curd.webp"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Image 3"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/milk.jpg"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="Image 4"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://ibmjob-images.s3.jp-tok.cloud-object-storage.appdomain.cloud/panner.jpg"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="Image 5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://raguramibm2022.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.js"></script>
+  </body>
+</html>
+
