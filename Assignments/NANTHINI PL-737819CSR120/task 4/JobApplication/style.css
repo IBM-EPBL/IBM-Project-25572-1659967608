@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/*--------------------rgba(87, 26, 26, 0.932),
+    rgb(141, 58, 38)-----------------*/
+
+.menu-bar {
+  background-image: linear-gradient(
+    to right,
+    rgba(107, 7, 7, 0.932),
+    rgb(172, 48, 48)
+  );
+}
+.banner p{
+    font-size: 20px;
+}
+p{
+    font-size: 17px;
+}
+.nav-link {
+  font-size: 16px;
+  color: white !important;
+  margin: 2px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+#about {
+  background: #efefef;
+  padding: 50px 0;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+#tips {
+  background-color: #f8f9fd;
+  padding: 50px 0;
+  margin: 10px;
+}
+
+.about-box {
+  background-color: white;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.menu-bar .navbar-toggler {
+  padding-right: 0;
+  outline: none;
+  border: none;
+}
+
+.banner {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.banner h1 {
+  padding-top: 250px;
+  font-size: 60px;
+  letter-spacing: 6px;
+  font-weight: 500;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.stats-box h4 {
+  padding-top: 10px;
+}
+
+.stats-box img {
+  width: 100%;
+  height: 28%;
+}
+
+#salary {
+  color: white;
+  background-color: #333;
+  margin: 10px;
+  padding: 50px;
+}
+
+#contact {
+  padding: 50px;
+  background-color: #e6e4e465;
+  margin: 10px;
+}
+
+.col-md-6 {
+  float: left;
+  text-align: left;
+}
+
+.col-md-6 audio {
+  margin: 10px;
+}
+
+.col-md-6 video {
+  margin-top: -50px;
+  width: 600px;
+}
+
+.col-md-6 p {
+  margin: 10px;
+}
+
+.search-job {
+  padding: 30px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.932), #1a1010ee);
+  margin: -50px 6% 50px;
+}
+
+.search-job .form-control {
+  max-width: 250px;
+  display: inline-flex;
+  margin: 10px 5px;
+  border-radius: 0;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.btn-primary {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: inline-flex;
+  margin: 5px;
+  padding: 5px 20px;
+}
+
+#recruiters {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#recruiters h3 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: 500;
+}
+
+h3::before {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    rgba(107, 7, 7, 0.932),
+    rgb(172, 48, 48)
+  );
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  z-index: -10;
+  margin: -15px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 90px;
+}
+h3{
+    font-size: 35px;
+}
+
+#recruiters img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+#jobs {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  margin: 10px;
+}
+
+.company-details {
+  box-shadow: 0 2px 70px0 rgba(158, 115, 208, 0.18);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.box {
+  box-shadow: 0 2px 70px rgba(158, 115, 208, 0.18);
+  padding: 5px 5px;
+}
+
+#recent {
+  padding: 100px 0;
+}
+
+.job-update {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.job-update .fa {
+  margin-top: 5px;
+  margin-right: 10px;
+  color: tomato;
+}
+
+.job-update small {
+  background: #efefef;
+  padding: 1px 5px;
+  margin: 0 5px;
+}
+
+.job-update p {
+  margin-bottom: 0 !important;
+}
+
+.job-update a {
+  text-decoration: none !important;
+  color: #b6beb6;
+  float: right;
+}
+
+.job-update a:hover {
+  color: red;
+}
+
+.apply-btn {
+  height: 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.932), #1a1010ee);
+  padding: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.apply-btn .btn-danger {
+  padding: 0 30px;
+  float: right;
+  border-radius: none;
+  box-shadow: none !important;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+#site-stats {
+  padding: 100px 0;
+}
+
+#site-stats h3 {
+  margin-bottom: 30px;
+}
+
+.stats-box {
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 20px 40px 0 rgba(110, 130, 208, 0.18);
+}
+
+.stats-box .fa {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#app-banner {
+  background-image: linear-gradient(
+    to right,
+    rgba(107, 7, 7, 0.932),
+    rgb(172, 48, 48)
+  );
+  padding: 50px 0;
+}
+
+
+#app-banner h1 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+#app-banner img {
+  width: 150px;
+  margin: 50px 0;
+}
+
+#footer {
+  background: #f8f9fd;
+  padding: 20px 10px 8px;
+}
+
+#footer p {
+  color: #333;
+}
+
+#footer a img {
+  width: 50px;
+  padding: 5px;
+}
