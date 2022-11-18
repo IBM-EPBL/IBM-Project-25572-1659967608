@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+  nginx-image:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nginxdocker
+    networks:
+      my_network: 
+        ipv4_address: 170.10.10.10
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 170.10.0.0/16
